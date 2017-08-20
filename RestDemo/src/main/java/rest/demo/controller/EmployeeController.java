@@ -26,7 +26,6 @@ public class EmployeeController {
   List<Employee> employees = employeeService.getEmployees();
 
   if (employees == null) {
-	  System.out.println("Error ");
    return new ResponseEntity<List<Employee>>(HttpStatus.NOT_FOUND);
   }
   System.out.println("Sucess");
